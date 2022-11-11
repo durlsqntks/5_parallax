@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="scene">
+            <div data-depth="-0.2" class="b1">
+                <img src="image/Amazing-busan0-1.png" alt="배경">
+            </div>
+            <div data-depth="-0.4">
+                <img src="image/Amazing-busan1.png" alt="글자">
+            </div>
+            <div data-depth="-0.6">
+                <img src="image/Amazing-busan2.png" alt="테두리">
+            </div>
+            <div data-depth="-0.8">
+                <img src="image/Amazing-busan3.png" alt="테두리2">
+            </div>
+            <div data-depth="-1.0">
+                <img src="image/Amazing-busan4.png" alt="테두리3">
+            </div>
+            <div data-depth="-1.2">
+                <img src="image/Amazing-busan5.png" alt="글">
+            </div>
+        </div>
+    </div>
+
+    <!-- https://matthew.wagerfield.com/parallax/ -->
+
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+</body>
+</html>
